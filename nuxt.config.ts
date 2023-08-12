@@ -16,9 +16,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      jsonApiUrl: 'http://localhost:8000',
-      jsonApiPath: 'http://localhost:8000/api',
-      webUrl: 'http://localhost:3000',
+      jsonApiUrl: process.env.API_URL,
+      jsonApiPath: process.env.API_PATH,
+      webUrl: process.env.WEB_URL,
     } 
   },
   vite: {
