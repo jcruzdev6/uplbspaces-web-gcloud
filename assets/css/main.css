@@ -1,0 +1,1571 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* VARIABLES                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+:root {
+  --headingFont: 'Optima', serif;
+  --bodyFont: 'Poppins', sans-serif;
+
+  --upGreen: rgb(0, 87, 63);
+  --upMaroon: rgb(128, 0, 0);
+  --upYellow:rgb(255,184,28);
+  --successGreen:  rgb(25,135,84);
+
+  --placeholderColor:rgb(118, 118, 118);
+  --placeholderFont: var(--bodyFont);
+
+  --headerheight:60px;
+
+  --taglineFontSize :12px;
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* NAV                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --navBgColor: var(--upGreen);
+  --navFontFamily: var(--headingFont);
+  --navFontColor:white;
+  --navFontSize:16px;
+  --navPadding:5px 15px;
+  --navHoverBgColor:white;
+  --navHoverFontColor:var(--upGreen);
+
+  --userNavBgColor:white;
+  --userNavFontFamily: var(--headingFont);
+  --userNavFontColor:var(--upGreen);
+  --userNavFontSize:16px;
+  --userNavPadding:5px 15px;
+  --userNavHoverBgColor:white;
+  --userNavHoverFontColor:var(upGreen);
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* OFF CANVAS NAV                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --sideNavBgColor: rgb(30,30,30);
+  --sideNavFontFamily: var(--headingFont);
+  --sideNavFontColor:white;
+  --sideNavFontSize:20px;
+  --sideNavPadding:10px 20px;
+  --sideNavHoverBgColor:white;
+  --sideNavHoverFontColor:black;
+
+  --sideNavBtnBgColor: rgb(214, 214, 214);
+  --sideNavBtnFontFamily: var(--headingFont);
+  --sideNavBtnFontColor:black;
+  --sideNavBtnFontSize:16px;
+  --sideNavBtnPadding: 10px 0;
+  --sideNavBtnHoverBgColor:white;
+  --sideNavBtnHoverFontColor:black;
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* HOMEPAGE GRID                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --gridOneBgColor: rgb(214, 214, 214);
+  --gridOneFontFamily: var(--bodyFont);
+  --gridOneFontColor: black;
+  --gridOneFontSize:14px;
+  --gridOneHeadingFontFamily: var(--headingFont);
+  --gridOneHeadingFontColor: black;
+
+  --gridOneFormLabelFontFamily: var(--headingFont);
+  --gridOneFormLabelFontSize: 16px;
+  --gridOneFormLabelFontColor: black;
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* HOMEPAGE TILES                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --tileTint:rgba(0,0,0,.2);
+  --tileBgColor: white;
+  --tileFontFamily: var(--bodyFont);
+  --tileFontColor:rgba(255, 255, 255,.8);
+  --tileFontSize:12px;
+  --tilePadding:10px 20px;
+  --tileTitleFontFamily: var(--headingFont);
+  --tileTitleFontColor:white;
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* MAIN                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+--mainBgColor: rgb(214, 214, 214);
+;
+--mainFontFamily: var(--bodyFont);
+--mainFontColor:rgb(109, 109, 109);
+--mainFontSize:14px;
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* FOOTER                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+--footerBgColor: var(--upGreen);
+--footerFontFamily: var(--bodyFont);
+--footerFontColor:white;
+--footerFontSize:14px;
+--footerPadding:20px 10px;
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* OFFCANVAS                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --offcanvasBgColor: rgb(30,30,30);
+  --offcanvasFontFamily: var(--bodyFont);
+  --offcanvasFontColor:white;
+  --offcanvasFontSize:14px;
+
+  --offcanvasTitleFontFamily: var(--headingFont);
+  --offcanvasTitleFontColor:white;
+  --offcanvasTitleFontSize:22px;
+
+  --offcanvasFormLabelFontSize:16px;
+  --offcanvasFormLabelFontFamily: var(--headingFont);
+  --offcanvasFormLabelFontColor: white;
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* MODAL                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  /*--modalBgColor: rgb(206, 206, 206);*/
+  --modalBgColor: rgb(250, 250, 250);   /* Jane - changed color */
+  --modalFontFamily: var(--bodyFont);
+  --modalFontColor:black;
+  --modalFontSize:14px;
+
+  --modalTitleFontFamily: var(--headingFont);
+  --modalTitleFontColor:black;
+  --modalTitleFontSize:25px;
+  --modalTitle2FontSize:20px;
+
+  --modalFormLabelFontSize:16px;
+  --modalFormLabelFontFamily: var(--headingFont);
+  --modalFormLabelFontColor: black;
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* CALENDAR                                                                                                                                                                */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --vacantColor: white;
+  --partialColor: rgb(216, 216, 216);
+  --fullColor: rgb(52, 52, 52);
+  --closedColor:rgb(111, 111, 111);
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* VARIABLES FOR MEDIA QUERY                                                                                                                                                                 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  --headerPadding-xs:0;
+  --headerPadding-sm: 0 20px;
+  --headerPadding-lg: 0;
+
+  --gridOnePadding-xs:30px 30px;
+  --gridOnePadding-sm:30px 80px;
+  --gridOnePadding-md:0;
+  --gridOnePadding-lg:0 40px;
+  --gridOnePadding-xl:60px;
+  --gridOnePadding-xxl:70px;
+
+  --gridOneHeadingFontSize-xs: 24px;
+  --gridOneHeadingFontSize-sm: 24px;
+  --gridOneHeadingFontSize-md: 26px;
+  --gridOneHeadingFontSize-lg: 28px;
+  --gridOneHeadingFontSize-xl: 30px;
+  --gridOneHeadingFontSize-xxl: 35px;
+
+  --tileHeight-xs:200px;
+  --tileHeight-sm:200px;
+  --tileHeight-md:200px;
+  --tileHeight-lg:180px;
+  --tileHeight-xl:200px;
+  --tileHeight-xxl:230px;
+
+  --tileTitleFontSize-xs:20px;
+  --tileTitleFontSize-sm:20px;
+  --tileTitleFontSize-md:20px;
+  --tileTitleFontSize-lg:20px;
+  --tileTitleFontSize-xl:20px;
+  --tileTitleFontSize-xxl:20px;
+
+  --offcanvasWidth-xs:100vw;
+  --offcanvasWidth-sm:400px;
+  
+  --spacesTileHeight-xs: 200px;
+  --spacesTileHeight-sm: 200px;
+  --spacesTileHeight-md: 200px;
+  --spacesTileHeight-lg: 180px;
+  --spacesTileHeight-xl: 200px;
+  --spacesTileHeight-xxl: 180px;
+}
+
+
+
+body {
+  font-family: var(--bodyFont);
+  font-weight: 300;
+  background-color: white;
+  /* background: linear-gradient(90deg, rgb(0,0,0) 0%, rgb(255,255,255)50%, rgb(0,0,0) 100%); */
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.light {
+  color:white !important;
+}
+.dark {
+  color: black !important;;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: black;
+  font-family: var(--headingFont);
+  margin: 0;
+  padding: 0;
+}
+.form-control:focus, .btn:focus, button:focus {
+  outline: 3px solid rgba(255,255,255,.3);
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 rgba(255,255,255,1), 0 0 0 rgba(0, 0, 0, 1);
+}
+a {
+  color: var(--upGreen);
+}
+a:focus {
+  outline: 1px solid rgba(255,255,255,.2);
+}
+small{
+  font-weight: 300;
+}
+button {
+  font-family: var(--headingFont) !important;
+  font-size: 18px !important;
+}
+.toggleBtn {
+  border: none;
+  background-color: rgba(128, 0, 0,0);
+  color: white;
+  font-size: 20px;
+}
+.toggleBtnDark {
+  border: none;
+  background-color: rgba(128, 0, 0,0);
+  color: rgb(77, 77, 77);
+  font-size: 20px;
+}
+.toggleBtnDark:hover {
+  color: black;
+}
+
+.socialBtn {
+  font-family: var(--bodyFont) !important;
+  font-size: 14px !important;
+  color: rgb(97, 97, 97);
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(222,226,230);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: white;
+}
+.socialBtn:hover {
+  color: rgb(65, 65, 65);
+}
+input::placeholder {
+  color: var(--placeholderColor);
+  font-family: var(--placeholderFont);
+}
+.myTable {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid rgb(234, 234, 234);
+  margin-bottom: 5px;
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, .05);
+}
+.myTable td, .myTable th{
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+  color: rgb(116, 116, 116);
+  /* border-right: 1px solid rgb(234, 234, 234);
+  border-bottom: 1px solid rgb(234, 234, 234); */
+}
+.myTable th{
+  font-weight: normal;
+  border: none;
+}
+.myTable thead{
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.myTable td.fb {
+  background-color: rgb(90, 90, 90);
+  color: white;
+}
+.myTable td.pb {
+  background-color: rgb(131, 178, 156);
+  color: white;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* NAV                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#nav {
+  background-color: var(--upGreen);
+  display: flex;
+  color: var(--navFontColor);
+  align-items: center;
+  padding: 0;
+}
+#navContent {
+  background-color: var(--upGreen);
+  display: flex;
+  /* align-items: end; */
+  align-items: flex-end; /* Jane - added "flex-" due to Vite warning */
+  padding: 0;
+}
+#navTagline {
+  background-color: var(--upGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--taglineFontSize);
+  padding: 2px 0;
+}
+#navMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navMenuLink {
+  background-color: var(--navBgColor);
+  font-family: var(--navFontFamily);
+  font-size: var(--navFontSize);
+  color: var(--navFontColor);
+  padding: var(--navPadding);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--nav);
+  transition: background-color 300ms linear;
+}
+a.navMenuLink:hover {
+  background-color: var(--navHoverBgColor);
+  color: var(--upGreen);
+}
+
+#navUserMenu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navUserMenuItem{
+  display: flex;
+  background-color: rgb(214, 214, 214);
+  /* border-top-left-radius: 7px;
+  border-top-right-radius: 7px; */
+}
+.navUserMenuLink {
+  background-color: var(--userNavBgColor);
+  font-family: var(--headingFont);
+  font-size: var(--userNavFontSize);
+  color: var(--userNavFontColor);
+  padding: var(--userNavPadding);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 300ms linear;
+  border:0px; /* Jane - added for button */
+}
+.navUserMenuLink:hover {
+  background-color: rgba(255, 255, 255,1);
+}
+.dropdown-menu {
+  border-radius: 0;
+  background-color: var(--upGreen);
+  color: inherit;
+  border: none;
+}
+.dropdown-item {
+  background-color: var(--navBgColor);
+  font-family: var(--navFontFamily);
+  font-size: var(--navFontSize);
+  color: var(--navFontColor);
+  padding: var(--navPadding);
+  transition: background-color 300ms linear;
+}
+.dropdown-item:hover {
+  background-color: var(--navHoverBgColor);
+  color: var(--upGreen);
+}
+
+
+#mainBg {
+  background-color:var(--mainBgColor);
+  height: 300px;
+  position: relative;
+  padding-top: 0px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* HOME GRID                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#home {
+  padding: 0;
+}
+#homeContent {
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, .05);
+}
+#homeGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1px;
+  row-gap: 1px;
+}
+
+#homeGridOneBg {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: inherit;
+}
+#homeGridOne {
+  background-color: var(--gridOneBgColor);
+  color: var(--gridOneFontColor);
+  border-radius: inherit;
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* align-items: start; */
+  align-items: flex-start;  /* Jane - added "flex-" due to Vite warning */
+  justify-content: center;
+}
+#homeGridOneContent {
+  width: 100%;
+  padding: var(--gridOnePadding-xs);
+  text-align: left;
+  font-weight: 300;
+  font-size: var(--gridOneFontSize);
+  display: block;
+}
+#homeGridOneContent a{
+  color: var(--gridOneFontColor);
+  font-size: var(--gridOneFontSize);
+}
+#homeGridOneContent p{
+  font-size: var(--gridOneFontSize);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#homeGridOneTitle {
+  /* font-weight: bold; */
+  font-family: var(--gridOneHeadingFontFamily);
+  font-size: var(--gridOneHeadingFontSize-xs);
+  color: var(--gridOneHeadingFontColor);
+  padding: 0;
+  margin: 0;
+}
+#homeGridOneContent label{
+  font-family: var(--gridOneFormLabelFontFamily);
+  color: var(--gridOneFormLabelFontColor);
+  font-size: var(--gridOneFormLabelFontSize);
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+
+.tileClip {
+  overflow: hidden;
+  border-radius: 0;
+}
+.tile {
+  position: relative;
+  height: var(--tileHeight-xs);
+  background-color: var(--tileBgColor);
+  display: flex;
+  border-radius: 0;
+}
+.tile > img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border-radius: inherit;
+  transition: transform 300ms;
+}
+.tile > .tileTint{
+  position: absolute;
+  background-color: var(--tileTint);
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  /* align-items: end; */
+  align-items: flex-end;  /* Jane - added "flex-" due to Vite warning */
+  transition: background-color 300ms linear;
+}
+.tileContent{
+  /* border: 1px solid white; */
+  background-color: rgba(0, 0, 0, .8);
+  width: 100%;
+  font-family: var(--tileFontFamily);
+  font-size: var(--tileFontSize);
+  color: var(--tileFontColor);
+  padding: var(--tilePadding);
+}
+.tileTitle{
+  margin: 0;
+  font-family: var(--tileTitleFontFamily);
+  color: var(--tileTitleFontColor);
+  font-size: var(--tileTitleFontSize-xs);
+  /* font-weight: bold; */
+}
+
+.tile:hover > img{
+  transform: scale(1.3);
+}
+.tile:hover > .tileTint{
+  background-color: rgba(0, 0, 0,0);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* MAIN                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#spaces {
+  font-family: var(--mainFontFamily);
+  font-size: var(--mainFontSize);
+  color: var(--mainFontColor);
+  font-weight: 400;
+  padding: 0;
+}
+#spacesContent {
+  padding: 0 0 50px 0;
+}
+.spacesHeader {
+  padding: 10px 20px 0px 20px;
+}
+#spacesHeaderLeftCol {
+  padding: 0 20px 20px 20px;
+}
+#spacesHeaderRightCol {
+  padding: 0 20px;
+}
+
+
+.spacesTitle {
+  font-size: 30px;
+  margin-top:20px; /* Jane - added top padding */
+}
+.spacesBreadcrumbs {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+}
+.spacesBreadcrumbs a{
+  color: inherit;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* SPACES LISTING                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#spacesGrid {
+  /* background-color: white; */
+  display: block;
+  grid-template-columns:repeat(1, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px 0;
+}
+/* .spacesTileContainer {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, .05);
+} */
+
+.spacesTileCard {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, .05);
+}
+.spacesTileClip {
+  overflow: hidden;
+}
+
+.spacesTileImg {
+  position: relative;
+  height: var(--spacesTileHeight-xs);
+  display: flex;
+}
+.spacesTileImg > img, .spacesTileBigImg > img{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 200ms;
+}
+.spacesTileImg > .spacesTileTint, .spacesTileBigImg > .spacesTint {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .1);
+  height: inherit;
+  width: 100%;
+  text-decoration: none;
+  transition: background-color 200ms linear;
+}
+.spacesTileImg:hover > img{
+  transform: scale(1.2);
+}
+.spacesTileImg:hover > .spacesTileTint{
+  background-color: rgba(0, 0, 0, 0);
+}
+.spacesTileDescriptionBox {
+  background-color: rgb(214, 214, 214);
+  background: radial-gradient(circle at top 5% right 90%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  padding: 15px;
+  height: inherit;
+}
+.spacesTileDescriptionBox address{
+  display: block;
+  overflow-x: auto;
+  height: 42px;
+  margin: 0;
+}
+.spacesTileTitleClip {
+  height: 54px;
+  overflow-y: auto;
+}
+.spacesTileTitle {
+  font-size: 22px;
+}
+.spacesTileTable {
+  display: grid;
+  grid-template-columns:38% 62%;
+}
+.spacesTileTable .label {
+  border-right: 1px solid rgb(214, 214, 214);
+}
+.spacesTileTable .row1 {
+  background-color: rgb(234, 234, 234);
+  padding: 6px 8px; /* Jane - updated padding */
+}
+.spacesTileTable .row2 {
+  background-color: rgb(223, 223, 223);
+  padding: 6px 8px; /* Jane - updated padding */
+}
+
+.stripedTable {
+  display: grid;
+  grid-template-columns:38% 62%;
+}
+.stripedTable .label {
+  border-right: 1px solid rgb(214, 214, 214);
+}
+.stripedTable .value {
+  border-right: 1px solid rgb(214, 214, 214);
+}
+.stripedTable .row1 {
+  background-color: rgb(234, 234, 234);
+  padding: 4px 6px; /* Jane - updated padding */
+}
+.stripedTable .row2 {
+  background-color: rgb(223, 223, 223);
+  padding: 4px 6px; /* Jane - updated padding */
+}
+
+.spacesTileTitle a{
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+}
+.spacesTileTitle a:hover{
+  color: black;
+}
+.spacesTileText {
+  font-size: 13px;
+}
+.spacesTileBtnContainer {
+  margin-top: 10px;
+  display: grid;
+}
+button.spacesTileBtn {
+  font-size: 14px !important;
+}
+
+/** Jane - added for validation */
+.msgError {
+  color: red;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  FOR INDIVIDUAL FACILITY                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  FOR TITLE OF PAGE    (BREAD CRUMBS, TITLE, PRICE)                                                                                                                                                              */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#spaceHeaderContent {
+  padding: 0;
+}
+#spaceHeaderLeftCol {
+  padding: 0px 20px 0px 30px !important; /* Jane - updated top padding on the breadcrumbs */
+}
+#spaceHeaderRightCol {
+  padding: 0px 20px 20px 20px !important; /* Jane - updated top padding on the breadcrumbs */
+}
+#spaceHeaderContent .stripedTable .label{
+  font-family: var(--bodyFont);
+  font-size: 12px;  
+}
+#spaceHeaderContent .stripedTable .value{
+  font-family: var(--bodyFont);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  FOR INNER PAGE  (ABOUT, CONTACT, FAQ)                                                                                                                                                                 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#innerpageHeader {
+  padding: 0;
+}
+#innerpageHeaderContent {
+  padding: 10px 20px 10px 20px;
+}
+#innerpage {
+  padding: 0;
+  margin-bottom: 50px;
+}
+#innerpageBody {
+  padding: 10px;
+  background-color: white;
+}
+#innerpageBodyContent {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+#innerpageBodyContent p{
+  margin-bottom: 15px;
+}
+.innerpageImgContainer {
+  position: relative;
+  background-color: black;
+  background: radial-gradient(circle at top 30% left 70%, rgb(122, 19, 24)10%, rgb(30, 142, 65)80%, rgb(0, 0, 0)100%);
+  margin-bottom: 30px;
+  height: 142px;
+  border-bottom: 10px solid var(--upMaroon);
+}
+.innerpageImgContainer > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  opacity: .5;
+}
+.innerpageImgText {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  font-family: var(--headingFont);
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  padding-left: 20px;
+}
+.innerpageImgTextLogo {
+  width: 150px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-inline-start: auto;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  FOR BODY OF PAGE  (IMAGE, COLUMNS)                                                                                                                                                                 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#spaceBody {
+  margin-bottom: 50px;
+}
+#spaceBodyContent {
+  padding: 0;
+  background-color: white;
+  font-size: 14px;
+}
+#spaceBodyContent .stripedTable .label {
+  font-size: 12px;
+}
+#spaceBodyContent .stripedTable .value {
+  font-weight: 400;
+}
+#spaceBodyLeftCol {
+  background-color: white;
+  padding: 10px !important;
+}
+#spaceBodyLeftColContent {
+  background-color: white;
+}
+#spaceBodyRightCol {
+  background-color: white;
+  padding: 10px !important;
+}
+.spaceBodyRightColTitle {
+  color: white;
+  padding: 20px 0 0 20px;
+}
+#spaceBodyRightColContent {
+  background-color: var(--upGreen);
+  color: white;
+  height: 100%;
+}
+
+#spaceImgContainer {
+  position: relative;
+  height: 400px;
+  display: flex;
+}
+#spaceImgContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#spaceDetails {
+  padding: 10px;
+  background-color: rgb(243, 243, 243);
+}
+#spaceDetails p{
+  margin-top: 10px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* CALENDAR  BOOKING                                                                                                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#allCalContainers {
+  margin:0 20px 20px 20px;
+  position: relative;
+}
+
+.calContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 3px rgba(0,0,0,.1);
+  margin-bottom: 30px;
+  color: black;
+}
+.calHead{
+  display: flex;
+  position: relative;
+  padding: 10px;
+}
+.calTitle{
+  margin: auto;
+  font-size: 16px !important;
+  font-family: var(--bodyFont);
+}
+.calMsgContainer {
+  background-color:rgb(233, 233, 233);
+  width: inherit;
+  margin-bottom: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calMsg {
+  font-size: 11px;
+  text-align: center;
+}
+.calGrid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.calGrid  > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.calFoot {
+  padding: 10px;
+  display: grid;
+}
+#prevMonth, #nextMonth {
+  cursor: pointer;
+}
+#calendarWeeks > div{
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+#calendarDays > div{
+  font-size: 11px;
+  padding: 5px 0;
+  border: 1px solid rgb(232, 232, 232);
+}
+#calendarDays > div.vacant:hover,#calendarDays > div.partial:hover{
+  border-color: black;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.closed {
+  color:rgb(201, 201, 201);
+}
+.partial {
+  background-color:rgb(227, 227, 227);
+}
+.full {
+  background-color: rgb(182, 36, 36);
+  color: white;
+}
+.partial, .vacant {
+  cursor: pointer;
+}
+
+#legend {
+  font-size: 11px;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}
+.legendTitle {
+  font-size: 10px;
+}
+
+#legend .partial{
+  color:rgb(227, 227, 227);
+}
+#legend .full{
+  color:  rgb(182, 36, 36);
+}
+
+#timeslots, #bookings {
+  position: absolute;
+  transition: transform 200ms;
+  z-index: 1;
+}
+.calList > div {
+  padding: 5px 10px; 
+}
+.calList > div:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.calListClip {
+  padding: 0 5px 0 20px;
+  height: 182px;
+  overflow-y: auto;
+}
+.calBtn {
+  background-color: rgb(4,170,109);
+  border:1px solid white;
+  border-radius: 10px !important;
+  color: white;
+  font-size: 12px !important;
+  padding: 5px;
+}
+.calBtn:hover {
+  border-radius: 10px !important;
+  background-color: rgb(0, 122, 77);
+}
+.closeCalContainerBtn{
+  position: absolute;
+  right: 10px;  
+  top: 10px;
+  border: none;
+  font-size: 16px !important;
+  background-color: rgba(255, 255, 255,0);
+  cursor: pointer;
+}
+#timeslots[data-status="show"], #bookings[data-status="show"] {
+  transform: scale(1);
+}
+#timeslots[data-status="hide"],
+#bookings[data-status="hide"] {
+  transform: scale(0);
+}
+
+
+#timeslotsHead {
+  position: relative;
+}
+#timeslotsDate{
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 5px;
+  padding: 2px;
+  border-radius: 4px;
+  width: 50px;
+}
+#timeslotsDate > div{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#timeslotsMonth{
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 10px;
+}
+#timeslotsDay{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+#timeslotsYear{
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+}
+.selectTimeItem {
+  position: relative;
+  border-radius: 5px;
+
+}
+#selectTimeList > div {
+  margin-bottom: 3px;
+}
+#selectTimeList > div:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.selectTimeItem > label {
+  border: 1px solid rgb(233, 233, 233);
+  margin: auto;
+  display: block;
+  font-family: var(--bodyFont) !important;
+  font-size: 11px !important;
+  border-radius: inherit;
+  padding: 3px 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.selectTimeItem > input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  top:5px;
+  left:10px;
+}
+.selectTimeItemCheck {
+  visibility: hidden;
+  position: absolute;
+  top:5px;
+  left:10px;
+}
+.selectTimeItem > input[type="checkbox"]:checked ~ label {
+  border: 1px solid rgb(0, 0, 0);
+  font-weight: bold;
+}
+.selectTimeItem > input[type="checkbox"]:checked ~ .selectTimeItemCheck {
+  visibility: visible;
+}
+
+.selectTimeItem:hover > label {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#bookingsList > div{
+  display: flex;
+  padding: 5px 10px;
+  margin-bottom: 3px;
+  border: 1px solid rgb(233, 233, 233);
+  background-color: #f2f2f2;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+}
+#bookingsList > div:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.bookingsEditDel {
+  display: flex;
+  align-items: center;
+  margin-inline-start: auto;
+}
+.bookingsEditDelBtn {
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 20px;
+  margin-right: 2px;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+}
+.bookingsEditBtn {
+  color: rgb(4,170,109);
+}
+.bookingsDelBtn {
+  color: rgb(182, 36, 36);
+}
+.bookingsEditBtn:hover > #editBookingTooltip {
+  opacity: 1;
+}
+.bookingsDelBtn:hover > #delBookingTooltip {
+  opacity: 1;
+}
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 1px 5px;
+  top: -15px;
+  right: 10px;
+  transition: opacity 200ms;
+}
+.bookingsGrid {
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+.bookingsPlace {
+  font-size: 12px;
+} 
+.bookingsDate, .bookingsTime {
+  font-size: 10px;
+}
+.bookingsLabel {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+.bookingsEditDel a {
+  color: black;
+}
+.calBadge {
+  color: white;
+  background-color: rgb(182, 36, 36);
+  padding: 0 5px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+#bookings2 {
+  display: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* HEAD                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#head {
+  background-color: var(--upMaroon);
+  display: flex;
+  color: white;
+  height: var(--headerheight);
+  align-items: center;
+}
+#headContent {
+  background-color: var(--upMaroon);
+  display: flex;
+  align-items: center;
+  padding: var(--headerPadding-xs);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* FOOTER                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#footer {
+  background-color:var(--footerBgColor);  position: relative;
+
+}
+#footerContent {
+  background-color:var(--footerBgColor);
+  color: var(--footerFontColor);
+  font-size: var(--footerFontSize);
+  padding: var(--footerPadding);
+  display: flex;
+  align-items: center;
+}    
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* OFFCANVAS                                                                                                                                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.offcanvas {
+  background-color: var(--offcanvasBgColor);
+  width: var(--offcanvasWidth-xs) !important;
+  font-size: var(--offcanvasFontSize);
+  font-family: var(--offcanvasFontFamily);
+  color: var(--offcanvasFontColor);
+  height: auto;
+}
+.offcanvas-body{
+  padding: 0 !important;
+}
+.offcanvas-header{ 
+  padding: 10px 20px !important;
+  display: flex;
+  align-items: center;
+}
+.offcanvas a{
+  color: var(--offcanvasFontColor);
+}
+.offcanvas a:hover{
+  text-decoration: none;
+}
+
+.offcanvasContainer {
+  padding: 20px;
+}
+.offcanvasTitle {
+  font-family: var(--offcanvasTitleFontFamily);
+  color: var(--offcanvasTitleFontColor);
+  font-size: var(--offcanvasTitleFontSize) !important;
+  text-decoration: none;
+}
+
+.offcanvasContainer label {
+  color: var(--offcanvasFormLabelFontColor);
+  font-family: var(--offcanvasFormLabelFontFamily);
+  margin: 10px 0 3px 0;
+  font-size: var(--offcanvasFormLabelFontSize);
+}
+
+
+a.offcanvasTitleAnchor {
+  font-family: var(--offcanvasTitleFontFamily);
+  color: var(--offcanvasFontColor);
+  font-size: var(--offcanvasTitleFontSize);
+  text-decoration: none;
+}
+a.offcanvasTitleAnchor:hover {
+  text-decoration: underline;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  OFFCANVAS MENU NAV                                                                                                                                                                   */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#sideMenu, .sideMenuSub,#sideUserMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.sideMenuLink {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--sideNavFontFamily);
+  color: var(--sideNavFontColor);
+  padding: var(--sideNavPadding);
+  font-size: var(--sideNavFontSize);
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  transition: background-color 300ms linear;
+}
+a.sideMenuLink:hover {
+  background-color: var(--sideNavHoverBgColor);
+  color: var(--sideNavHoverFontColor);
+}
+.sideMenuSubLink{
+  padding: 10px 20px 10px 40px;
+}
+#sideUserMenuContainer {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+#sideUserMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:15px;
+  width:360px;
+}
+.sideUserMenuItem {
+  display: flex;
+}
+a.sideUserMenuBtn {
+  background-color: white;
+  width: 110px;
+  box-shadow: 0 2px 4px 4px rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: var(--sideNavBtnPadding);
+  text-align: center;
+  color: var(--sideNavBtnFontColor);
+  text-decoration: none;
+  font-family: var(--sideNavBtnFontFamily);
+  font-size: var(--sideNavBtnFontSize);
+}
+a.sideUserMenuBtn:hover {
+  background-color: var(--sideNavBtnHoverBgColor);
+  color: var(--sideNavBtnHoverFontColor);
+}
+a.sideUserMenuBtn i.fa-solid, .sideUserMenuBtn i.fa-regular {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  MODAL                                                                                                                                                                   */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.modal-content {
+  background-color: var(--modalBgColor);
+  font-family: var(--modalFontFamily);
+  font-size: var(--modalFontSize);
+  color: var(--modalFontColor);
+
+}
+.modalContainer {
+  border-radius: inherit;
+  padding: 0px 40px 40px 40px;
+}
+.modalHeader {
+  display: flex;
+}
+.modalTitle {
+  font-family: var(--modalTitleFontFamily);
+  font-size: var(--modalTitleFontSize);
+  color: var(--modalTitleFontColor);
+}
+.modalTitle2 {
+  font-family: var(--modalTitleFontFamily);
+  font-size: var(--modalTitle2FontSize);
+  color: var(--modalTitleFontColor);
+  margin-top: 20px;
+}
+.modalContainer label {
+  color: var(--modalFormLabelFontColor);
+  font-family: var(--modalFormLabelFontFamily);
+  margin: 10px 0 3px 0;
+  font-size: var(--modalFormLabelFontSize);
+}
+.modalContainer label a{
+  font-size: inherit;
+}
+.modalContainer a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+.modalContainer a:hover {
+  text-decoration: none;
+}
+.modalTitleContainer {
+  display: flex;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  SMALL SCREEN     */
+/* * * * * * * * * * */
+
+@media (min-width:576px) {
+  #headContent {
+    padding:var(--headerPadding-sm);
+  }
+  #homeGridOneContent {
+    padding: var(--gridOnePadding-sm);
+  }
+  .offcanvas {
+    width: var(--offcanvasWidth-sm) !important;
+  }
+}
+
+/* * * * * * * * * ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  */
+/*  MEDIUM SCREEN     */
+/* * * * * * * * * * */
+
+@media (min-width:768px) {
+  #homeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #homeGridOneBg {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #homeGridOneContent {
+    padding:var(--gridOnePadding-md);
+    display: flex;
+  }  
+  #homeGridOneLeftCol {
+    width: 50%;
+    padding: 70px 40px 30px 40px;
+    /* text-align: right; */
+  }
+  #homeGridOneRightCol {
+    width: 50%;
+    padding: 20px 50px 20px 0px;
+  }
+  #homeGridOneTitle {
+    font-size: var(--gridOneHeadingFontSize-md);
+  }  
+  #spacesGrid {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  LARGE SCREEN     */
+/* * * * * * * * * * */
+
+@media (min-width:992px) {
+  #headContent {
+    padding:var(--headerPadding-lg);
+  }
+  #mainBg { 
+    padding-top: 20px;
+  }  
+  #homeContent {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }  
+  #homeGridOne {
+    align-items: center;
+  }
+  #homeGridOneContent {
+    padding:var(--gridOnePadding-lg);
+    display: block;
+  }
+  #homeGridOneLeftCol {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  #homeGridOneRightCol {
+    width: 100%;
+    padding: 0;
+  }
+  #homeGridOneTitle {
+    font-size: var(--gridOneHeadingFontSize-lg);
+  }
+  #homeGridOneBg {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #homeGrid {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  #spacesGrid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+  #innerpageHeaderContent {
+    padding: 0px 20px 0 20px;
+    margin-bottom: 10px;
+  }
+  #innerpageBodyContent {
+    width: 70%;
+  }
+  
+  .spacesHeader{
+    padding:0 20px;
+  }
+  
+  .spacesTileImg {
+    height: var(--spacesTileHeight-lg);
+  }  
+  .tile {
+    height: var(--tileHeight-lg);
+    /* border-radius: 5px; */
+  }
+  .tileTitle{
+    font-size: var(--tileTitleFontSize-lg);
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  X-LARGE SCREEN   */
+/* * * * * * * * * * */
+
+
+@media (min-width:1200px) {
+  #homeGridOneContent {
+    padding:var(--gridOnePadding-xl);
+  }
+  #homeGridOneTitle {
+    font-size: var(--gridOneHeadingFontSize-xl);
+  }
+  .tile {
+    height: var(--tileHeight-xl);
+  }
+  .tileTitle{
+    font-size: var(--tileTitleFontSize-xl);
+  }
+  .spacesTileImg {
+    height: var(--spacesTileHeight-xl);
+  }  
+ 
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*  XX-LARGE SCREEN   */
+/* * * * * * * * * * */
+
+
+@media (min-width:1400px) {
+  #homeGridOneContent {
+    padding:var(--gridOnePadding-xxl);
+  }
+  #homeGridOneTitle {
+    font-size: var(--gridOneHeadingFontSize-xxl);
+  }
+  .tile {
+    height: var(--tileHeight-xxl);
+  }
+  .tileTitle{
+    font-size: var(--tileTitleFontSize-xxl);
+  }
+  #spacesGrid {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+  .spacesTileImg {
+    height: var(--spacesTileHeight-xxl);
+  }  
+
+}
