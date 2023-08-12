@@ -2,6 +2,9 @@
 # https://hub.docker.com/_/node
 FROM node:19-alpine
 
+ENV PORT 8080
+ENV HOST 0.0.0.0
+
 # Create and change to the app directory.
 WORKDIR /usr/src/app
  
@@ -15,4 +18,6 @@ COPY . .
 # Build the app
 RUN npm run build
  
+EXPOSE 8080
+
 CMD [ "npm", "run", "start" ]
