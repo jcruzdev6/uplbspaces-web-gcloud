@@ -3,6 +3,11 @@ import { resolve } from "path";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  server: {
+    port: process.env.PORT || 3000,
+    host: "0.0.0.0",
+    timing: false
+  },
   alias: {
     assets: "/<rootDir>/assets",
     pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
