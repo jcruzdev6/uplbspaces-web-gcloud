@@ -1,13 +1,21 @@
-FROM node:13.6-alpine
+# Use the official lightweight Node.js 18 image.
+# https://hub.docker.com/_/node
+FROM node:19-alpine
 
-ARG BUILD_ENV
-
-RUN mkdir -p /usr/src/app
-COPY package*.json /usr/src/app/
-RUN cd /usr/src/app/; npm install
+# Create and change to the app directory.
 WORKDIR /usr/src/app
-COPY . /usr/src/app
+ 
+# Install app dependencies
+COPY package*.json ./
+RUN npm install
 
+# Bundle app source
+COPY . .
+
+# Build the app
 RUN npm run build
 
+# Expose the port
+EXPOSE 3000
+ 
 CMD [ "npm", "run", "start" ]
